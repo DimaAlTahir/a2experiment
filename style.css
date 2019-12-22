@@ -1,13 +1,12 @@
 .groove {
-    border: darkorange;
-    border-style: groove;
+    border: darkorange groove;
     clear: both;
 }
 
 .double {
-    border: blueviolet;
-    border-style: double;
+    border: blueviolet double;
     clear: both;
+    text-align: center;
 }
 
 #header {
@@ -18,20 +17,13 @@
     height: 112px;
     position: fixed;
     background-color: #ffffff;
-    border:inset;
+    border:1px solid blue;
 }
 
 #content {
     margin: 113px 0px 0px 150px;
     display: block;
     padding: 10px;
-}
-
-#pic {
-    float: left;
-    width: 25%;
-    height: 330px;
-    margin-bottom: 20px;
 }
 
 #navigation {
@@ -41,7 +33,7 @@
     width: 142px;
     height: 100%;
     position: fixed;
-    border:inset;
+    border:2px solid blue;;
 }
 
 .navbtns {
@@ -49,10 +41,12 @@
     border: darkorange;
     border-style: groove;
     cursor: pointer;
-    padding: .5px;
     text-align: center;
     text-decoration: none;
     margin: 10px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
 }
 
 #intro{
@@ -62,8 +56,21 @@
     margin-bottom: 20px;
 }
 
-table {
-    border: darkorange;
-    border-style: groove;
+#pic {
     width: 100%;
+    height: 250px;
+}
+
+table, td, th {
+    border: 1px solid darkorange;
+}
+
+#piccontainer{
+    width: 15%;
+}
+
+table {
+    border: darkorange double;
+    clear: both;
+    text-align: center;
 }
