@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-#header {
+.header {
     display: block;
     top: 0px;
     left: 0px;
@@ -18,6 +18,11 @@
     position: fixed;
     background-color: #ffffff;
     border:1px solid blue;
+}
+
+h1{
+    margin-top: 40px;
+    top:50px;
 }
 
 #content {
@@ -36,17 +41,50 @@
     border:2px solid blue;;
 }
 
-.navbtns {
-    list-style:none;
-    border: darkorange;
-    border-style: groove;
-    cursor: pointer;
-    text-align: center;
+.myButton {
+    box-shadow:inset 0px 1px 0px 0px #f9eca0;
+    background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+    background-color:#f0c911;
+    border:1px solid #e65f44;
+    cursor:pointer;
+    color:#c92200;
+    padding:5px;
     text-decoration: none;
     margin: 10px;
     width: 100px;
     text-align: center;
-    padding: 5px;
+    text-shadow:0px 1px 0px #ded17c;
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+    background-color:#f2ab1e;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+.myButtonH {
+    box-shadow:inset 0px 1px 0px 0px #f9eca0;
+    background:linear-gradient(to bottom, #66ffff 5%, #0000ff 100%);
+    background-color:#66ffff;
+    border:1px solid #0000ff;
+    cursor:pointer;
+    color:#000066;
+    padding:5px;
+    text-decoration: none;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    text-shadow:0px 1px 0px #66ccff;
+}
+.myButtonH:hover {
+    background:linear-gradient(to bottom, #0000ff 5%, #66ffff 100%);
+    background-color:#66ffff;
+}
+.myButtonH:active {
+    position:relative;
+    top:1px;
 }
 
 #intro{
@@ -54,6 +92,14 @@
     width: 75%;
     height: 330px;
     margin-bottom: 20px;
+}
+
+#btns {
+    display: block;
+    top: 40px;
+    position: fixed;
+    right:0px;
+
 }
 
 #pic {
