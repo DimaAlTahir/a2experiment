@@ -8,27 +8,31 @@
 </head>
 <body>
     <div class="header">
-        <h1>Simple Biographies</h1>
+        <h1>
+            Simple Biographies
+        </h1>
+
+        <br>
+        <div id="btns">
+            <a href="#"> <button class="myButtonH"> HOME </button> </a>
+            <a href="#"> <button class="myButtonH"> NEWS </button> </a>
+            <a href="#"> <button class="myButtonH"> About </button> </a>
+            <a href="#"> <button class="myButtonH"> Contact </button> </a>
+            <a href="#"> <button class="myButtonH"> Store </button> </a>
+        </div>
     </div>
 
     <div id="navigation">
-        <button class="myButton"><a href="#intro">Introduction</a></button>
-        <button class="myButton"><a href="#Crypt">Cryptanalysis</a></button>
-        <button class="myButton"><a href="#comptest">Early computers and the Turing test</a></button>
-        <button class="myButton"><a href="#bio">Pattern formation and mathematical biology</a></button>
-    </div>
-
-    <div id="btns">
-        <button class="myButtonH"><a href="#">HOME</a></button>
-        <button class="myButtonH"><a href="#">NEWS</a></button>
-        <button class="myButtonH"><a href="#">PODCAST</a></button>
-        <button class="myButtonH"><a href="#">SHOP</a></button>
+        <a href="#intro"> <button class="myButton"> Introduction </button> </a>
+        <a href="#Crypt"> <button class="myButton"> Cryptanalysis </button> </a>
+        <a href="#comptest"> <button class="myButton"> Early computers and the Turing test</button> </a>
+        <a href="#bio"> <button class="myButton"> Pattern formation and mathematical biology </button> </a>
     </div>
 
     <div id="content">
         <h2 class="double">Alan Turing</h2>
         <div >
-            <table>
+            <table class="table1st">
                 <tr>
                     <td id="piccontainer">
                         <img id="pic" src="imgs\16yoturing.jpg"alt="Alan Turing at age 16">
@@ -52,51 +56,62 @@
 
         <div id="career">
             <h2 id="Crypt" class="double">Cryptanalysis</h2>
-            <p class="groove">
-                During the Second World War, Turing was a leading participant in the breaking of German ciphers at Bletchley Park.
-                The historian and wartime codebreaker Asa Briggs has said, "You needed exceptional talent, you needed genius at Bletchley
-                and Turing's was that genius."
-            </p>
+            <div class="groove">
+                <p>
+                    During the Second World War, Turing was a leading participant in the breaking of German ciphers at Bletchley Park.
+                    The historian and wartime codebreaker Asa Briggs has said, "You needed exceptional talent, you needed genius at Bletchley
+                    and Turing's was that genius."
+                </p>
+            </div>
 
             <h2 id="comptest" class="double">Early computers and the Turing test</h2>
-            <p class="groove">
-                Between 1945 and 1947, Turing lived in Hampton, London, while he worked on the design of the ACE (Automatic Computing Engine)
-                at the National Physical Laboratory (NPL). He presented a paper on 19 February 1946, which was the first detailed design
-                of a stored-program computer.[106] Von Neumann's incomplete First Draft of a Report on the EDVAC had predated Turing's paper,
-                but it was much less detailed and, according to John R. Womersley, Superintendent of the NPL Mathematics Division,
-                it "contains a number of ideas which are Dr. Turing's own". Although ACE was a feasible design,
-                the secrecy surrounding the wartime work at Bletchley Park led to delays in starting the project and he became disillusioned.
-                In late 1947 he returned to Cambridge for a sabbatical year during which he produced a seminal work on Intelligent Machinery
-                that was not published in his lifetime.[108] While he was at Cambridge, the Pilot ACE was being built in his absence.
-                It executed its first program on 10 May 1950, and a number of later computers around the world owe much to it,
-                including the English Electric DEUCE and the American Bendix G-15. The full version of Turing's ACE was not built
-                until after his death.
-            </p>
-            <p class="groove">
-                In 1948, Turing was appointed reader in the Mathematics Department at the Victoria University of Manchester.
-                A year later, he became Deputy Director of the Computing Machine Laboratory, where he worked on software for one
-                of the earliest stored-program computers—the Manchester Mark 1. Turing wrote the first version of the Programmer's Manual for
-                this machine, and was recruited by Ferranti as a consultant in the development of their commercialised machine,
-                the Ferranti Mark 1. He continued to be paid consultancy fees by Ferranti until his death.
-            </p>
-            <p class="groove">
-                In 1948 Turing, working with his former undergraduate colleague, D.G. Champernowne,
-                began writing a chess program for a computer that did not yet exist. By 1950, the program was completed and dubbed the Turochamp.[114] In 1952, he tried to implement it on a Ferranti Mark 1, but lacking enough power, the computer was unable to execute the program. Instead, Turing "ran" the program by flipping through the pages of the algorithm and carrying out its instructions on a chessboard, taking about half an hour per move. The game was recorded.[115] According to Garry Kasparov, Turing's program "played a recognizable game of chess."[116] The program lost to Turing's colleague Alick Glennie,
-                although it is said that it won a game against Champernowne's wife, Isabel.
+            <div class="groove">
+                <p>
+                    Between 1945 and 1947, Turing lived in Hampton, London, while he worked on the design of the ACE (Automatic Computing Engine)
+                    at the National Physical Laboratory (NPL). He presented a paper on 19 February 1946, which was the first detailed design
+                    of a stored-program computer.[106] Von Neumann's incomplete First Draft of a Report on the EDVAC had predated Turing's paper,
+                    but it was much less detailed and, according to John R. Womersley, Superintendent of the NPL Mathematics Division,
+                    it "contains a number of ideas which are Dr. Turing's own". Although ACE was a feasible design,
+                    the secrecy surrounding the wartime work at Bletchley Park led to delays in starting the project and he became disillusioned.
+                    In late 1947 he returned to Cambridge for a sabbatical year during which he produced a seminal work on Intelligent Machinery
+                    that was not published in his lifetime.[108] While he was at Cambridge, the Pilot ACE was being built in his absence.
+                    It executed its first program on 10 May 1950, and a number of later computers around the world owe much to it,
+                    including the English Electric DEUCE and the American Bendix G-15. The full version of Turing's ACE was not built
+                    until after his death.
+                </p>
+            </div>
 
-                His Turing test was a significant, characteristically provocative,
-                and lasting contribution to the debate regarding artificial intelligence, which continues after more than half a century.
-            </p>
+            <div class="groove">
+                <p>
+                    In 1948, Turing was appointed reader in the Mathematics Department at the Victoria University of Manchester.
+                    A year later, he became Deputy Director of the Computing Machine Laboratory, where he worked on software for one
+                    of the earliest stored-program computers—the Manchester Mark 1. Turing wrote the first version of the Programmer's Manual for
+                    this machine, and was recruited by Ferranti as a consultant in the development of their commercialised machine,
+                    the Ferranti Mark 1. He continued to be paid consultancy fees by Ferranti until his death.
+                </p>
+            </div>
+            <div class="groove">
+                <p>
+                    In 1948 Turing, working with his former undergraduate colleague, D.G. Champernowne,
+                    began writing a chess program for a computer that did not yet exist. By 1950, the program was completed and dubbed the Turochamp.[114] In 1952, he tried to implement it on a Ferranti Mark 1, but lacking enough power, the computer was unable to execute the program. Instead, Turing "ran" the program by flipping through the pages of the algorithm and carrying out its instructions on a chessboard, taking about half an hour per move. The game was recorded.[115] According to Garry Kasparov, Turing's program "played a recognizable game of chess."[116] The program lost to Turing's colleague Alick Glennie,
+                    although it is said that it won a game against Champernowne's wife, Isabel.
+
+                    His Turing test was a significant, characteristically provocative,
+                    and lasting contribution to the debate regarding artificial intelligence, which continues after more than half a century.
+                </p>
+            </div>
 
             <h2 id="bio" class="double">Pattern formation and mathematical biology</h2>
-            <p class="groove">
-                When Turing was 39 years old in 1951, he turned to mathematical biology, finally publishing his masterpiece
-                "The Chemical Basis of Morphogenesis" in January 1952. He was interested in morphogenesis, the development of patterns
-                and shapes in biological organisms. He suggested that a system of chemicals reacting with each other and diffusing across
-                space, termed a reaction-diffusion system, could account for "the main phenomena of morphogenesis". Although published before
-                the structure and role of DNA was understood, Turing's work on morphogenesis remains relevant today and is
-                considered a seminal piece of work in mathematical biology.
-            </p>
+            <div class="groove">
+                <p>
+                    When Turing was 39 years old in 1951, he turned to mathematical biology, finally publishing his masterpiece
+                    "The Chemical Basis of Morphogenesis" in January 1952. He was interested in morphogenesis, the development of patterns
+                    and shapes in biological organisms. He suggested that a system of chemicals reacting with each other and diffusing across
+                    space, termed a reaction-diffusion system, could account for "the main phenomena of morphogenesis". Although published before
+                    the structure and role of DNA was understood, Turing's work on morphogenesis remains relevant today and is
+                    considered a seminal piece of work in mathematical biology.
+                </p>
+            </div>
         </div>
     </div>
 

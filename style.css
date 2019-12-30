@@ -1,10 +1,20 @@
+body{
+    background: white;
+    text-align: justify;
+}
+
 .groove {
-    border: darkorange groove;
-    clear: both;
+    border: 1px solid darkorange;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .double {
-    border: blueviolet double;
+    border: #3c5fff double;
     clear: both;
     text-align: center;
 }
@@ -17,7 +27,7 @@
     height: 112px;
     position: fixed;
     background-color: #ffffff;
-    border:1px solid blue;
+    border:1px solid #3c5fff;
 }
 
 h1{
@@ -38,7 +48,7 @@ h1{
     width: 142px;
     height: 100%;
     position: fixed;
-    border:2px solid blue;;
+    border:2px solid #3c5fff;
 }
 
 .myButton {
@@ -47,13 +57,13 @@ h1{
     background-color:#f0c911;
     border:1px solid #e65f44;
     cursor:pointer;
-    color:#c92200;
     padding:5px;
     text-decoration: none;
     margin: 10px;
     width: 100px;
     text-align: center;
     text-shadow:0px 1px 0px #ded17c;
+    color: black;
 }
 .myButton:hover {
     background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
@@ -65,22 +75,23 @@ h1{
 }
 
 .myButtonH {
-    box-shadow:inset 0px 1px 0px 0px #f9eca0;
-    background:linear-gradient(to bottom, #66ffff 5%, #0000ff 100%);
-    background-color:#66ffff;
-    border:1px solid #0000ff;
+    box-shadow:inset 0px 1px 0px 0px #45ceff;
+    background:linear-gradient(to bottom, #45ceff 5%, #49abff 100%);
+    background-color:#45ceff;
+    border:1px solid #49abff;
     cursor:pointer;
-    color:#000066;
+    color:black;
     padding:5px;
     text-decoration: none;
     margin: 10px;
     width: 100px;
     text-align: center;
-    text-shadow:0px 1px 0px #66ccff;
+    text-decoration: none;
+    text-shadow:0px 1px 0px #45ceff;
 }
 .myButtonH:hover {
-    background:linear-gradient(to bottom, #0000ff 5%, #66ffff 100%);
-    background-color:#66ffff;
+    background:linear-gradient(to bottom, #49abff 5%, #45ceff 100%);
+    background-color:#45ceff;
 }
 .myButtonH:active {
     position:relative;
@@ -102,21 +113,114 @@ h1{
 
 }
 
-#pic {
-    width: 100%;
-    height: 250px;
+.pic {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table, td, th {
     border: 1px solid darkorange;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    border-collapse: collapse;
+}
+th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    padding: 10px;
+    text-align: left;
 }
 
 #piccontainer{
-    width: 15%;
+    width: 50%;
+}
+
+.table1st {
+    clear: both;
+    border: darkorange double;
+    clear: both;
+    text-align: center;
 }
 
 table {
     border: darkorange double;
     clear: both;
     text-align: center;
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    #piccontainer{
+        width: 100%;
+        border-bottom: darkorange groove;
+    }
+
+    #pic{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #btns {
+        display: block;
+        top: 400px;
+        left: 0px;
+        width: 142px;
+        height: 100%;
+        position: fixed;
+        border-top: #3c5fff solid;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .header {
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 112px;
+        overflow: hidden;
+        position: fixed;
+        background-color: #ffffff;
+        border:1px solid #3c5fff;
+    }
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+        text-align: justify;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
 }
